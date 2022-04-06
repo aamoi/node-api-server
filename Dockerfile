@@ -1,3 +1,5 @@
+#docker run --publish 3000:3000 e061837/user-management-api
+#docker build -t e061837/user-management-api:latest .
 FROM node:16
 
 # Create app directory
