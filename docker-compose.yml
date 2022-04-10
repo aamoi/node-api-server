@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  user-node-server:
+    image: e061837/user-management-api
+    ports:
+      - "3000:3000"
+
+  user-angular-ui:
+    image: e061837/user-management-ui
+    ports:
+      - "4200:80"
+  
