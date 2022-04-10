@@ -1,7 +1,7 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'postgres',
-  host: 'localhost',
+  host: '192.168.100.2',
   database: 'spark_java_framework',
   password: 'postgres',
   port: 5432,
