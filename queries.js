@@ -55,7 +55,7 @@ const updateUser = (request, response) => {
     [first_name, last_name, email, phone_number, id],
     (error, results) => {
       if (error) {
-      console.log(`Failed to update user ${error}.`)
+      console.log(`Failed to update a user ${error}.`)
 
         throw error
       }
