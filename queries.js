@@ -36,7 +36,7 @@ const createUser = (request, response) => {
   pool.query('INSERT INTO users (first_name, last_name, email, phone_number) VALUES ($1, $2, $3,$4) RETURNING *', [first_name, last_name, email, phone_number], (error, results) => {
     if (error) {
 
-      console.log(`Failed creating user ${error}.`)
+      console.log(`Failed creating a user ${error}.`)
 
       throw error
     }
